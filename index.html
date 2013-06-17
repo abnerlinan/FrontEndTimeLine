@@ -9,11 +9,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body ng-controller="DataCtrl">
-    <ul>
-        <li ng-repeat="d in data | orderBy:'date'">
-            <em>{{d.date}}</em><span>{{d.name}}</span>
-            <div class="descr">{{d.description}}</div>
-        </li>
-    </ul>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>
+                    <a href="" ng-click="predicate = 'date'; reverse=false">Date</a>
+                    (<a href ng-click="predicate = '-date'; reverse=false">^</a>)
+                </th>
+                <th>
+                    <a href="" ng-click="predicate = 'name'; reverse=false">Name</a>
+                    (<a href ng-click="predicate = '-name'; reverse=false">^</a>)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="d in data | orderBy:'date'">
+                <td>{{d}}</td>
+                <td><em>{{d.date}}</em></td>
+                <td>
+                    <span>{{d.name}}</span>
+                    <div class="descr">{{d.description}}</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
