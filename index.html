@@ -28,7 +28,7 @@
                   </thead>
                   <tbody>
                       <tr ng-repeat="d in data | orderBy:'date'">
-                          <td>{{d.index}}</td>
+                          <td>{{$index+1}}</td>
                           <td><em>{{d.date}}</em></td>
                           <td>
                               <span>{{d.name}}</span>
