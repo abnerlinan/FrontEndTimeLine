@@ -1,0 +1,10 @@
+/* Styles go here */
+
+em{
+    margin-right:10px;
+    display:inline-block;
+    width:70px;
+}
+.descr{
+    display:none;
+}
