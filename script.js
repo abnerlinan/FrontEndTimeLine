@@ -1,0 +1,10 @@
+$().ready(function(){
+  $('span.name').hover(
+    function(){
+      $(this).next().fadeIn();
+    },
+    function(){
+      $(this).next().fadeOut();
+    }
+  )
+})

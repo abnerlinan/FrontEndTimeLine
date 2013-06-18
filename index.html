@@ -5,6 +5,8 @@
     <title>Timeline</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
     <script src="data.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -43,8 +45,8 @@
                             <td>{{$index+1}}</td>
                             <td><em>{{d.date}}</em></td>
                             <td>
-                                <span>{{d.name}}</span>
-                                <div class="descr">{{d.description}}</div>
+                                <span class="name">{{d.name}}</span>
+                                <div class="descr well">{{d.description}}</div>
                             </td>
                         </tr>
                     </tbody>

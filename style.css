@@ -5,6 +5,16 @@ em{
     display:inline-block;
     width:70px;
 }
+td{
+    position:relative;
+}
 .descr{
     display:none;
+    position:absolute;
+    top:25px;
+    left:50px;
+    z-index:2;
+}
+.name{
+    cursor:pointer;
 }
