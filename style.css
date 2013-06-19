@@ -1,5 +1,8 @@
 /* Styles go here */
 
+body div.container {
+    width:1000px;
+}
 em{
     margin-right:10px;
     display:inline-block;
@@ -17,4 +20,29 @@ td{
 }
 .name{
     cursor:pointer;
+}
+.navbar{
+    margin-bottom:30px;
+}
+.navbar-inner{	
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+    border:none;
+    border-radius:0;
+    box-shadow:0 1px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .brand{
+    color:#fff;
+}
+.navbar .nav > li > a{
+    color:#fff;
+}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover{
+    color:#fff;
+}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus{
+    background-color:#666;
+    color:#fff;
 }

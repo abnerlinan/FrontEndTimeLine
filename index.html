@@ -31,12 +31,17 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th></th>
+                            <th>
+                                No.
+                            </th>
                             <th>
                                 Date
                             </th>
                             <th>
                                 Name
+                            </th>
+                            <th>
+                                Relevant-person
                             </th>
                         </tr>
                     </thead>
@@ -47,6 +52,9 @@
                             <td>
                                 <span class="name">{{d.name}}</span>
                                 <div class="descr well">{{d.description}}</div>
+                            </td>
+                            <td>
+                                <span class="name">{{d.person}}</span>
                             </td>
                         </tr>
                     </tbody>
